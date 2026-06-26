@@ -112,6 +112,17 @@ const Contact = () => {
                   LinkedIn
                 </a>
                 <a
+                  href="https://x.com/anish_anandhan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white hover:text-[#ff2a2a] transition-all duration-300 border border-white/10 hover:border-white"
+                >
+                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                  Twitter
+                </a>
+                <a
                   href="mailto:anishanandhan13@gmail.com"
                   className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white hover:text-[#ff2a2a] transition-all duration-300 border border-white/10 hover:border-white"
                 >
