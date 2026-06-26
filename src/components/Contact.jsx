@@ -124,8 +124,8 @@ const Contact = () => {
                   href="tel:+918870676412"
                   className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white hover:text-[#ff2a2a] transition-all duration-300 border border-white/10 hover:border-white"
                 >
-                  <svg className="w-4 h-4 fill-none stroke-current" strokeWidth="2.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.387a12.035 12.035 0 01-7.108-7.108c-.145-.44.02-.927.387-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M21.97 18.33a3.1 3.1 0 0 1-.9 2.27l-1.7 1.7a3.1 3.1 0 0 1-2.22.9 19.9 19.9 0 0 1-8.7-2.6 19.3 19.3 0 0 1-6-6 19.9 19.9 0 0 1-2.6-8.7A3.1 3.1 0 0 1 .75 3.7l1.7-1.7a3.1 3.1 0 0 1 2.27-.9 3.1 3.1 0 0 1 2.22.9l1.7 2.9a3.1 3.1 0 0 1-.3 3.3L7.3 9.7a15.9 15.9 0 0 0 6 6l1.5-1.1a3.1 3.1 0 0 1 3.3-.3l2.9 1.7a3.1 3.1 0 0 1 .9 2.27z"/>
                   </svg>
                   Call
                 </a>
