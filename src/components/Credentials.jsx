@@ -39,6 +39,24 @@ const credentialsList = [
   },
   {
     number: "05",
+    category: "AUTOMATION",
+    title: "Certified Essentials Automation Professional",
+    issuer: "Automation Anywhere",
+    issueDate: "Feb 2026",
+    credentialId: "AA-CEAP-2026",
+    verifyUrl: "https://certificates.automationanywhere.com/"
+  },
+  {
+    number: "06",
+    category: "AI & CLOUD",
+    title: "Salesforce Agentforce Certification",
+    issuer: "Udemy",
+    issueDate: "Dec 2025",
+    credentialId: "SF-AGENTFORCE-2025",
+    verifyUrl: "https://www.udemy.com/"
+  },
+  {
+    number: "07",
     category: "DATA ANALYTICS",
     title: "Power BI Data Analyst Associate",
     issuer: "Microsoft (NASSCOM)",
@@ -47,7 +65,7 @@ const credentialsList = [
     verifyUrl: "https://learn.microsoft.com/"
   },
   {
-    number: "06",
+    number: "08",
     category: "CYBERSECURITY",
     title: "OWASP Top 10",
     issuer: "TryHackMe",
@@ -71,6 +89,33 @@ const publicationsList = [
     year: "2025",
     doi: "10.1109/ICCRTEE64519.2025.11053096",
     details: "Developed an unsupervised learning model for anomaly detection using deep feature extraction and machine learning techniques on large-scale datasets."
+  }
+];
+
+const awardsList = [
+  {
+    title: "First Prize — Innovation Track",
+    event: "VOID:v1 Hackathon",
+    date: "Oct 2025",
+    details: "Secured First Place as Team Secure2047 for building an AI-powered resume analyzer with semantic search."
+  },
+  {
+    title: "Grand Finalist",
+    event: "Google Cloud Agentic Premier League",
+    date: "Oct 2025",
+    details: "Reached the national Grand Finale in Bengaluru with SURGE, a multi-agent sports intelligence platform built on Google Cloud AI."
+  },
+  {
+    title: "Semi-Finalist",
+    event: "ET-AI Hackathon 2026 (Economic Times)",
+    date: "May 2026",
+    details: "Emerged as a Semi-Finalist for building a five-agent financial signal platform for Indian retail investors."
+  },
+  {
+    title: "Global Participant",
+    event: "L'Oréal Brandstorm 2026",
+    date: "2026",
+    details: "Competed as Team Olfactum in the EOCCS-certified youth innovation competition with AI-powered fragrance tech."
   }
 ];
 
@@ -209,6 +254,42 @@ const Credentials = () => {
                   >
                     {pub.doi}
                   </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Hackathon Awards & Honors Section */}
+        <div className="mt-20 pt-16 border-t border-gray-200" data-aos="fade-up">
+          <div className="inline-block border border-gray-300 rounded-full px-5 py-1.5 text-xs text-gray-600 font-bold mb-6 shadow-sm bg-white uppercase tracking-widest font-mono">
+            Hackathons & Honors
+          </div>
+          <h3 className="text-3xl md:text-4xl font-black text-gray-900 leading-tight tracking-tight font-display mb-10">
+            Awards & Recognition
+          </h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {awardsList.map((award, index) => (
+              <div
+                key={index}
+                className="bg-white border border-gray-200/90 rounded-[1.8rem] p-6 flex flex-col justify-between hover:border-[#ff2a2a]/40 hover:shadow-md transition-all duration-300"
+              >
+                <div>
+                  <div className="flex justify-between items-center mb-3">
+                    <span className="text-[10px] font-bold text-[#ff2a2a] uppercase tracking-widest font-mono bg-red-50/80 px-2.5 py-0.5 rounded-full border border-red-100">
+                      {award.event}
+                    </span>
+                    <span className="text-[10px] font-mono text-gray-400 font-bold">
+                      {award.date}
+                    </span>
+                  </div>
+                  <h4 className="text-base font-black text-gray-900 mb-2 tracking-tight leading-snug">
+                    {award.title}
+                  </h4>
+                  <p className="text-gray-500 text-xs leading-relaxed font-medium">
+                    {award.details}
+                  </p>
                 </div>
               </div>
             ))}
