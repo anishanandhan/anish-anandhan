@@ -19,10 +19,8 @@ const About = () => {
       name: 'Armis',
       icon: (
         <svg viewBox="0 0 48 48" className="w-10 h-10 md:w-12 md:h-12">
-          <rect width="48" height="48" rx="12" fill="#0B162C" />
-          <path d="M24 10 L35 15 V25 C35 32 29 38 24 40 C19 38 13 32 13 25 V15 Z" fill="none" stroke="#00E5FF" strokeWidth="2.5" strokeLinejoin="round" />
-          <circle cx="24" cy="23" r="4" fill="#00E5FF" />
-          <path d="M24 14 V17 M24 29 V32 M15 23 H18 M30 23 H33" stroke="#00E5FF" strokeWidth="2" strokeLinecap="round" />
+          <rect width="48" height="48" rx="12" fill="#4D2C91" />
+          <path d="M12 36 L25 10 H35 L26 26 H34 L27 36 H18 L22 28 H16 Z" fill="#FFFFFF" />
         </svg>
       ),
     },
@@ -39,10 +37,15 @@ const About = () => {
       name: 'Ghidra',
       icon: (
         <svg viewBox="0 0 48 48" className="w-10 h-10 md:w-12 md:h-12">
-          <rect width="48" height="48" rx="12" fill="#0D1F17" />
-          <path d="M14 36 C14 30 18 26 22 22 C18 20 14 16 12 12 C18 13 24 16 28 20 C32 18 36 14 38 10 C37 16 35 22 31 26 C33 30 36 34 36 38 C32 36 28 34 25 31 C21 34 17 36 14 36 Z" fill="#00E676" />
-          <circle cx="28" cy="22" r="2" fill="#FF1744" />
-          <path d="M20 25 C23 23 27 24 30 27" stroke="#0D1F17" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+          <rect width="48" height="48" rx="12" fill="#0F0F10" />
+          {/* Ghidra Red Dragon Infinity Loop Emblem */}
+          <path d="M17 17 C11 17 8 21 8 24 C8 27 11 31 17 31 C22 31 26 24 31 24 C36 24 40 27 40 30 C40 33 36 36 31 36 C27 36 24 33 21 28 L17 31 C21 37 26 40 31 40 C39 40 44 35 44 30 C44 23 38 20 31 20 C26 20 22 27 17 27 C14 27 12 25 12 24 C12 23 14 21 17 21 C20 21 23 23 26 27 L30 24 C26 19 21 17 17 17 Z" fill="#E52E2E" />
+          {/* Dragon Head on Top Right Loop */}
+          <path d="M30 18 C33 13 38 12 41 14 C42 16 39 19 36 20 C39 21 42 22 41 24 C38 23 34 22 30 18 Z" fill="#E52E2E" />
+          <circle cx="36" cy="16" r="1.2" fill="#FFD54F" />
+          {/* Binary bits */}
+          <text x="10" y="16" fill="#FFD54F" fontSize="4" fontWeight="bold" fontFamily="monospace">010</text>
+          <text x="7" y="37" fill="#FFD54F" fontSize="4" fontWeight="bold" fontFamily="monospace">101</text>
         </svg>
       ),
     },
