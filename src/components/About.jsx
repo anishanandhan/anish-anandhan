@@ -121,7 +121,7 @@ const About = () => {
           </p>
 
           <p className="text-base md:text-lg text-red-100/90 leading-relaxed max-w-3xl mb-12 font-medium">
-            Previously a <strong className="text-white">Research Intern at IIT Madras</strong> (Centre for Cybersecurity, Trust and Reliability), where I built DriverArmory (a BYOVD exploitation analysis platform), automated Ghidra headless binary pipelines for 400+ signed drivers, and integrated BOF/C2 frameworks.
+            Previously a <strong className="text-white">Research Intern at IIT Madras</strong> (Centre for Cybersecurity, Trust and Reliability), where I built a BYOVD exploitation analysis platform, automated Ghidra headless binary pipelines for 400+ signed drivers, and integrated BOF/C2 frameworks.
           </p>
 
           {/* Tech Stack Icons */}

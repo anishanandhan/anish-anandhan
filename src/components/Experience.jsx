@@ -6,6 +6,7 @@ const activeRoles = [
     company: "Medtronic PLC",
     location: "Hyderabad, India",
     tenure: "Jul 2026 – Present",
+    isOngoing: true,
     details: [
       "Contribute to OT Security initiatives across security governance, management, PMO, vulnerability management, and cyber defense functions.",
       "Support OT vulnerability management using Armis and Rapid7 for asset visibility, vulnerability identification, risk assessment, and remediation tracking across industrial environments.",
@@ -19,9 +20,10 @@ const activeRoles = [
     company: "IIT Madras (Centre for Cybersecurity, Trust & Reliability)",
     location: "Chennai, India",
     tenure: "May 2026 – July 2026",
+    isOngoing: false,
     details: [
-      "Contributed to DriverArmory, a research-grade BYOVD intelligence and exploitation platform for analyzing signed vulnerable Windows drivers.",
-      "Worked on the Command and Control (C2) component, integrating Cipher C2 with BOF/COFF-based in-process payload dispatch and DriverArmory backend.",
+      "Engineered a research-grade BYOVD intelligence and exploitation platform for analyzing signed vulnerable Windows drivers.",
+      "Worked on the Command and Control (C2) component, integrating Cipher C2 with BOF/COFF-based in-process payload dispatch.",
       "Developed a Ghidra headless analysis pipeline to automate driver binary analysis, IOCTL mapping, vulnerability pattern detection, and CVE cross-referencing.",
       "Worked with a corpus of 400+ signed vulnerable drivers, extracting security-relevant metadata and generating vulnerability analysis reports."
     ],
@@ -96,13 +98,24 @@ const Experience = () => {
               key={index}
               data-aos="fade-up"
               data-aos-delay={index * 100}
-              className="bg-white border-2 border-emerald-500/80 rounded-[2rem] p-8 md:p-10 flex flex-col justify-between shadow-[0_15px_40px_rgba(16,185,129,0.06)] hover:shadow-[0_20px_50px_rgba(16,185,129,0.12)] transition-all duration-500 hover:scale-[1.01] relative"
+              className={`bg-white border-2 ${
+                role.isOngoing 
+                  ? 'border-emerald-500/80 shadow-[0_15px_40px_rgba(16,185,129,0.06)] hover:shadow-[0_20px_50px_rgba(16,185,129,0.12)]' 
+                  : 'border-gray-200 shadow-sm hover:border-gray-300 hover:shadow-md'
+              } rounded-[2rem] p-8 md:p-10 flex flex-col justify-between transition-all duration-500 hover:scale-[1.01] relative`}
             >
-              {/* Ongoing Indicator Badge */}
-              <div className="absolute top-6 right-8 flex items-center gap-1.5 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full text-[10px] font-bold text-emerald-600 uppercase tracking-widest font-mono">
-                <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                Ongoing
-              </div>
+              {/* Ongoing or Completed Indicator Badge */}
+              {role.isOngoing ? (
+                <div className="absolute top-6 right-8 flex items-center gap-1.5 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full text-[10px] font-bold text-emerald-600 uppercase tracking-widest font-mono">
+                  <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
+                  Ongoing
+                </div>
+              ) : (
+                <div className="absolute top-6 right-8 flex items-center gap-1.5 bg-gray-100 border border-gray-200 px-3 py-1 rounded-full text-[10px] font-bold text-gray-600 uppercase tracking-widest font-mono">
+                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                  Completed
+                </div>
+              )}
 
               <div>
                 <span className="text-xs text-[#ff2a2a] font-bold tracking-widest uppercase font-mono block mb-2">

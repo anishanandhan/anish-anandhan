@@ -21,12 +21,12 @@ const projects = [
   },
   {
     number: "03",
-    title: "DriverArmory - BYOVD Research & Exploitation",
-    category: "Security Research / Reverse Engineering",
-    description: "Research-grade BYOVD intelligence platform built at IIT Madras. Automates Ghidra headless binary analysis pipelines, IOCTL mapping, vulnerability pattern detection, and CVE cross-referencing across 400+ signed vulnerable Windows drivers.",
-    tech: ["Ghidra", "Python", "Cipher C2", "BOF/COFF", "Windows Kernel"],
-    demoLink: "https://github.com/anishanandhan/DriverArmory",
-    codeLink: "https://github.com/anishanandhan/DriverArmory"
+    title: "DeepAnomalySec - Unsupervised Anomaly Detection",
+    category: "Security Research / Deep Learning",
+    description: "An unsupervised deep feature extraction & clustering framework designed for high-dimensional security telemetry and network anomaly detection across large-scale enterprise datasets. Published in IEEE 2025.",
+    tech: ["PyTorch", "Python", "Deep Learning", "Clustering", "IEEE Research"],
+    demoLink: "https://github.com/anishanandhan",
+    codeLink: "https://github.com/anishanandhan"
   },
   {
     number: "04",
