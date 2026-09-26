@@ -28,6 +28,18 @@ const activeRoles = [
       "Worked with a corpus of 400+ signed vulnerable drivers, extracting security-relevant metadata and generating vulnerability analysis reports."
     ],
     accent: true
+  },
+  {
+    title: "Amazon MLSS 2026 Scholar",
+    company: "Amazon ML Summer School",
+    location: "Remote",
+    tenure: "Jul 2026 – Aug 2026",
+    isOngoing: false,
+    details: [
+      "Selected as Amazon MLSS 2026 Scholar for intensive machine learning curriculum at Amazon.",
+      "Covered advanced ML topics, deep learning architectures, reinforcement learning, and production ML pipelines."
+    ],
+    accent: true
   }
 ];
 
@@ -51,12 +63,12 @@ const standardRoles = [
     ]
   },
   {
-    title: "Global Admissions Committee Member",
+    title: "Global Admissions Committee Member & Campus Director",
     company: "Millennium Campus Network (MCN)",
-    tenure: "2026 – Present",
+    tenure: "Nov 2025 – Present",
     details: [
-      "Reviewing applications for the international Millennium Fellowship program, calibrating scores for batches across Cameroon, Tanzania, Nigeria, and Botswana.",
-      "Working directly with global Team Leads to ensure rigorous assessment standards and selection integrity."
+      "Reviewing applications for the international Millennium Fellowship program across 100+ countries.",
+      "Led campus-level social impact initiatives at VIT Chennai, managing 15 student fellows."
     ]
   }
 ];
