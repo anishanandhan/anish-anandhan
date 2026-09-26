@@ -98,7 +98,7 @@ const Hero = () => {
             Hi, I'm Anish
             <br />
             <span className="font-display font-extrabold text-white text-3xl md:text-5xl lg:text-[54px] mt-1 block tracking-tighter leading-none">
-              Cybersecurity Professional
+              OT/ICS Security & Cyber Defense
             </span>
           </h1>
 
@@ -108,7 +108,7 @@ const Hero = () => {
             data-aos-delay="200"
             className="text-white/95 text-sm md:text-base font-medium mb-8 max-w-lg drop-shadow-md leading-relaxed"
           >
-            I'm a Software Engineering student at VIT Chennai and a Cybersecurity Professional passionate about security research, penetration testing, building secure-by-design applications, and threat intelligence. I focus on ensuring modern digital experiences remain secure, resilient, and performant.
+            OT/ICS Security Intern at Medtronic PLC & Cybersecurity Researcher specializing in OT/ICS Security, Vulnerability Management, Cyber Defense, Threat Intelligence, and Cloud Security. Experienced in IEC 62443, reverse engineering, security automation, and threat research.
           </p>
 
           {/* Buttons */}

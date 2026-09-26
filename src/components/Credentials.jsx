@@ -2,67 +2,75 @@ import React, { useState } from 'react';
 
 const credentialsList = [
   {
-    number: "23",
-    category: "JS CORE",
-    title: "JavaScript Essentials 1",
-    issuer: "Cisco NetAcad",
-    issueDate: "Jan 2024",
-    credentialId: "cisco-js1-9872",
-    verifyUrl: "https://www.netacad.com/"
-  },
-  {
-    number: "24",
-    category: "JS CORE",
-    title: "JavaScript Essentials 2",
-    issuer: "Cisco NetAcad",
-    issueDate: "Feb 2024",
-    credentialId: "cisco-js2-1082",
-    verifyUrl: "https://www.netacad.com/"
-  },
-  {
     number: "01",
+    category: "CYBERSECURITY • SECOPS",
+    title: "Microsoft Certified: Security Operations Analyst Associate (SC-200)",
+    issuer: "Microsoft",
+    issueDate: "2026",
+    credentialId: "MS-SC200-2026",
+    verifyUrl: "https://learn.microsoft.com/"
+  },
+  {
+    number: "02",
+    category: "CYBERSECURITY",
+    title: "Certified in Cybersecurity (CC)",
+    issuer: "ISC2",
+    issueDate: "Jan 2026",
+    credentialId: "ISC2-CC-2026",
+    verifyUrl: "https://www.isc2.org/"
+  },
+  {
+    number: "03",
+    category: "CLOUD • DEVSECOPS",
+    title: "AWS Certified CloudOps Engineer – Associate",
+    issuer: "Amazon Web Services",
+    issueDate: "2026",
+    credentialId: "AWS-CLOUDOPS-2026",
+    verifyUrl: "https://aws.amazon.com/"
+  },
+  {
+    number: "04",
     category: "CLOUD • AI",
     title: "AWS Certified AI Practitioner",
     issuer: "Amazon Web Services",
     issueDate: "Dec 2025",
-    credentialId: "aws-ai-prac-4720",
+    credentialId: "AWS-AI-PRAC-4720",
     verifyUrl: "https://aws.amazon.com/"
   },
   {
-    number: "02",
-    category: "CLOUD • AI",
-    title: "AWS Academy Graduate – Cloud Foundations",
-    issuer: "AWS Academy",
-    issueDate: "Nov 2025",
-    credentialId: "aws-acad-found-1982",
-    verifyUrl: "https://aws.amazon.com/training/awsacademy/"
-  },
-  {
-    number: "03",
+    number: "05",
     category: "DATA ANALYTICS",
     title: "Power BI Data Analyst Associate",
     issuer: "Microsoft (NASSCOM)",
     issueDate: "Aug 2024",
-    credentialId: "ms-pbi-da-8271",
+    credentialId: "MS-PBI-DA-8271",
     verifyUrl: "https://learn.microsoft.com/"
   },
   {
-    number: "04",
-    category: "CYBERSECURITY",
-    title: "Certified in Cybersecurity (CC)",
-    issuer: "ISC2",
-    issueDate: "Oct 2024",
-    credentialId: "isc2-cc-9021",
-    verifyUrl: "https://www.isc2.org/"
-  },
-  {
-    number: "05",
+    number: "06",
     category: "CYBERSECURITY",
     title: "OWASP Top 10",
     issuer: "TryHackMe",
     issueDate: "May 2024",
-    credentialId: "thm-owasp10-8721",
+    credentialId: "THM-OWASP10-8721",
     verifyUrl: "https://tryhackme.com/"
+  }
+];
+
+const publicationsList = [
+  {
+    title: "Integration of Piezoelectric and LDR Sensors for Efficient Electricity Generation",
+    publisher: "IEEE Conference Publication",
+    year: "2025",
+    doi: "10.1109/ICTMIM65579.2025.10988268",
+    details: "Proposed an energy-efficient system integrating piezoelectric and LDR sensors for sustainable electricity in smart infrastructure and energy optimization."
+  },
+  {
+    title: "Unsupervised Anomaly Detection using Deep Feature Extraction and Clustering",
+    publisher: "IEEE Conference Publication",
+    year: "2025",
+    doi: "10.1109/ICCRTEE64519.2025.11053096",
+    details: "Developed an unsupervised learning model for anomaly detection using deep feature extraction and machine learning techniques on large-scale datasets."
   }
 ];
 
@@ -159,10 +167,58 @@ const Credentials = () => {
           </div>
         </div>
 
+        {/* Research Publications Section */}
+        <div className="mt-24 pt-16 border-t border-gray-200" data-aos="fade-up">
+          <div className="inline-block border border-gray-300 rounded-full px-5 py-1.5 text-xs text-gray-600 font-bold mb-6 shadow-sm bg-white uppercase tracking-widest font-mono">
+            IEEE Papers
+          </div>
+          <h3 className="text-3xl md:text-4xl font-black text-gray-900 leading-tight tracking-tight font-display mb-10">
+            Research Publications
+          </h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {publicationsList.map((pub, index) => (
+              <div
+                key={index}
+                className="bg-[#f8f8f8] border border-gray-200 rounded-[2rem] p-8 flex flex-col justify-between hover:border-[#ff2a2a]/40 hover:shadow-lg transition-all duration-300"
+              >
+                <div>
+                  <div className="flex justify-between items-center mb-4">
+                    <span className="text-xs font-bold text-[#ff2a2a] uppercase tracking-widest font-mono bg-red-50 px-3 py-1 rounded-full border border-red-100">
+                      {pub.publisher}
+                    </span>
+                    <span className="text-xs font-mono text-gray-400 font-bold">
+                      {pub.year}
+                    </span>
+                  </div>
+                  <h4 className="text-xl font-black text-gray-900 mb-3 tracking-tight leading-snug">
+                    {pub.title}
+                  </h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-6 font-medium">
+                    {pub.details}
+                  </p>
+                </div>
+
+                <div className="pt-4 border-t border-gray-200 flex items-center justify-between text-xs font-mono">
+                  <span className="text-gray-400">DOI:</span>
+                  <a
+                    href={`https://doi.org/${pub.doi}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-gray-800 hover:text-[#ff2a2a] underline transition-colors"
+                  >
+                    {pub.doi}
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Footer Tagline */}
-        <div className="mt-12 text-center" data-aos="fade-up">
+        <div className="mt-16 text-center" data-aos="fade-up">
           <span className="font-['Caveat',cursive] text-3xl text-gray-600 block rotate-1">
-            Certificate Credentials
+            Research that ships. Code that matters.
           </span>
         </div>
 

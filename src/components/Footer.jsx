@@ -7,10 +7,10 @@ const Footer = () => {
       {/* Top Row */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 w-full font-medium">
         <div className="flex flex-col gap-1">
-          <p>AI Systems & Agents</p>
-          <p>Cybersecurity Research</p>
-          <p>Threat Intelligence</p>
-          <p>Penetration Testing</p>
+          <p>OT/ICS Security</p>
+          <p>Cyber Defense & CTI</p>
+          <p>Vulnerability Management</p>
+          <p>Security Research & Reverse Engineering</p>
         </div>
         
         <div className="flex flex-col gap-1 md:items-center">

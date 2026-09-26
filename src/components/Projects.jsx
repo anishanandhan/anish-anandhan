@@ -3,6 +3,33 @@ import React from 'react';
 const projects = [
   {
     number: "01",
+    title: "OTSecTwin - OT/ICS Security Digital Twin",
+    category: "OT/ICS Security",
+    description: "Built an OT/ICS security digital twin for simulated industrial environments (PLC, HMI, SCADA). Implemented asset discovery, CVE/CVSS risk correlation, behavioral detection for unauthorized PLC writes & anomalous Modbus function codes, and a React + ELK/Kibana dashboard.",
+    tech: ["Python", "OpenPLC", "Modbus/TCP", "ELK", "Docker", "React"],
+    demoLink: "https://github.com/anishanandhan/OTSecTwin",
+    codeLink: "https://github.com/anishanandhan/OTSecTwin"
+  },
+  {
+    number: "02",
+    title: "AetherCTI - Cyber Threat Intelligence Platform",
+    category: "Threat Intelligence / CTI",
+    description: "Automated CTI platform querying 80+ security engines in parallel for IP, hash, domain, and URL analysis. Features an async FastAPI correlation engine, 0–100 threat scoring, and automated MITRE ATT&CK TTP mapping for SOC investigations.",
+    tech: ["FastAPI", "Python", "Asyncio", "SQLite", "MITRE ATT&CK", "httpx"],
+    demoLink: "https://github.com/anishanandhan/AetherCTI",
+    codeLink: "https://github.com/anishanandhan/AetherCTI"
+  },
+  {
+    number: "03",
+    title: "DriverArmory - BYOVD Research & Exploitation",
+    category: "Security Research / Reverse Engineering",
+    description: "Research-grade BYOVD intelligence platform built at IIT Madras. Automates Ghidra headless binary analysis pipelines, IOCTL mapping, vulnerability pattern detection, and CVE cross-referencing across 400+ signed vulnerable Windows drivers.",
+    tech: ["Ghidra", "Python", "Cipher C2", "BOF/COFF", "Windows Kernel"],
+    demoLink: "https://github.com/anishanandhan/DriverArmory",
+    codeLink: "https://github.com/anishanandhan/DriverArmory"
+  },
+  {
+    number: "04",
     title: "AI Insider Threat Detection",
     category: "Cybersecurity / AI",
     description: "An intelligent anomaly detection system parsing enterprise email logs and user behavior patterns using ML/DL to identify potential malicious insider threats.",
@@ -11,16 +38,7 @@ const projects = [
     codeLink: "https://github.com/anishanandhan/AI-Insider-Threat-Detection"
   },
   {
-    number: "02",
-    title: "BharatPulse",
-    category: "AI Systems / Web App",
-    description: "AI-powered real-time sports engagement platform with multi-agent orchestration, live tactical intelligence, fan interaction systems, and immersive match experiences.",
-    tech: ["TypeScript", "React.js", "FastAPI", "MongoDB", "LangChain"],
-    demoLink: "https://github.com/anishanandhan/BharatPulse",
-    codeLink: "https://github.com/anishanandhan/BharatPulse"
-  },
-  {
-    number: "03",
+    number: "05",
     title: "VulnScanner",
     category: "Cybersecurity / Automation",
     description: "An automated web vulnerability scanning tool written in Python to audit endpoints for security flaws, configuration issues, and OWASP Top 10 vulnerabilities.",
@@ -29,31 +47,13 @@ const projects = [
     codeLink: "https://github.com/anishanandhan/VulnScanner"
   },
   {
-    number: "04",
+    number: "06",
     title: "FlowEmbed",
-    category: "Machine Learning / Research",
+    category: "Machine Learning / SecOps",
     description: "An advanced metric learning framework designed to embed network traffic flows for anomaly detection, malware identification, and security telemetry analysis.",
     tech: ["Python", "PyTorch", "NetworkX", "Scikit-Learn", "Numpy"],
     demoLink: "https://github.com/anishanandhan/FlowEmbed",
     codeLink: "https://github.com/anishanandhan/FlowEmbed"
-  },
-  {
-    number: "05",
-    title: "RobIQ-AI",
-    category: "AI Agents / HR Tech",
-    description: "An LLM-powered candidate ranking and analysis pipeline that evaluates resume profiles against job descriptions using semantic search and retrieval evaluation.",
-    tech: ["Python", "FastAPI", "Ollama", "FAISS", "LangChain"],
-    demoLink: "https://github.com/anishanandhan/RobIQ-AI",
-    codeLink: "https://github.com/anishanandhan/RobIQ-AI"
-  },
-  {
-    number: "06",
-    title: "FanForge-AI",
-    category: "AI Agents / Gamification",
-    description: "An immersive multi-agent AI operating system for adaptive tournament fan engagement, real-time predictions, and cinematic sports intelligence experiences.",
-    tech: ["TypeScript", "React.js", "Ollama", "FastAPI", "Socket.io"],
-    demoLink: "https://github.com/anishanandhan/FanForge-AI",
-    codeLink: "https://github.com/anishanandhan/FanForge-AI"
   }
 ];
 

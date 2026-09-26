@@ -2,20 +2,28 @@ import React from 'react';
 
 const skillGroups = [
   {
-    title: "Security & Reverse Engineering",
-    tags: ["Ghidra", "Kali Linux", "OWASP ZAP", "Burp Suite", "Wireshark", "YARA"],
+    title: "OT/ICS Security",
+    tags: ["IEC 62443", "ICS/SCADA", "PLC", "HMI", "Industrial Protocols", "OT Vulnerability Assessment", "OT Penetration Testing"],
   },
   {
-    title: "Backend & Data",
-    tags: ["Python", "FastAPI", "MongoDB", "Flask", "Firebase", "Docker", "ELK Stack"],
+    title: "Cyber Defense",
+    tags: ["Vulnerability Management", "Incident Response", "Threat Intelligence", "IOC Analysis", "SIEM", "Security Monitoring"],
   },
   {
-    title: "AI & Machine Learning",
-    tags: ["TensorFlow", "Qiskit", "FAISS", "LangChain", "Ollama", "Generative AI", "LLMs"],
+    title: "Security & Testing",
+    tags: ["CVE/CVSS Analysis", "Network Security", "Web Application Security", "Security Testing"],
   },
   {
-    title: "Tools & Research",
-    tags: ["Git", "GitHub", "Linux", "Postman", "Netlify", "UTM/QEMU", "IEEE LaTeX"],
+    title: "Security Tools",
+    tags: ["Armis", "Rapid7", "Qualys VMDR", "Wireshark", "Nmap", "Burp Suite", "OWASP ZAP", "ELK / Kibana"],
+  },
+  {
+    title: "Cloud & DevSecOps",
+    tags: ["AWS", "Docker", "Git", "SAST / DAST", "Security Automation", "Python", "FastAPI"],
+  },
+  {
+    title: "Security Research",
+    tags: ["Reverse Engineering", "Ghidra", "Vulnerable Driver Analysis", "Firmware Security", "Fuzzing"],
   }
 ];
 
@@ -40,8 +48,8 @@ const Skills = () => {
           </p>
         </div>
 
-        {/* 4-Box Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        {/* 6-Box Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-8">
           {skillGroups.map((group, index) => (
             <div
               key={index}

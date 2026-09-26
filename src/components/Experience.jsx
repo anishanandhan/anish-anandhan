@@ -2,23 +2,28 @@ import React from 'react';
 
 const activeRoles = [
   {
-    title: "Research Intern",
-    company: "IIT Madras CyStar",
-    tenure: "2026 – Present",
+    title: "OT/ICS Security Intern",
+    company: "Medtronic PLC",
+    location: "Hyderabad, India",
+    tenure: "Jul 2026 – Present",
     details: [
-      "Conducting offensive security research focusing on Vulnerable Driver Analysis (BYOVD) and kernel-level exploitation chains.",
-      "Architecting 'DriverArmory' — an automated intelligence platform executing Ghidra headless binary analysis pipelines to map IOCTL handlers and cross-reference CVEs.",
-      "Designing EDR evasion models and integration protocols for custom BOF payloads via Sliver/Cipher C2 frameworks."
+      "Contribute to OT Security initiatives across security governance, management, PMO, vulnerability management, and cyber defense functions.",
+      "Support OT vulnerability management using Armis and Rapid7 for asset visibility, vulnerability identification, risk assessment, and remediation tracking across industrial environments.",
+      "Contribute to OT Cyber Defense activities including incident response (IR) and cyber threat intelligence (CTI), supporting security monitoring and investigation workflows.",
+      "Automated an IOC-driven vulnerability assessment workflow using Microsoft Power Automate, enabling IP addresses/hostnames received as IOCs to be automatically investigated for vulnerabilities."
     ],
     accent: true
   },
   {
-    title: "Global Admissions Committee Member",
-    company: "Millennium Campus Network (MCN)",
-    tenure: "2026 – Present",
+    title: "Research Intern",
+    company: "IIT Madras (Centre for Cybersecurity, Trust & Reliability)",
+    location: "Chennai, India",
+    tenure: "May 2026 – July 2026",
     details: [
-      "Reviewing applications for the international Millennium Fellowship program, calibrating scores for batches from Cameroon, Tanzania, Nigeria, and Botswana.",
-      "Working directly with global Team Leads to ensure rigorous assessment standards, data integrity, and fairness in selection."
+      "Contributed to DriverArmory, a research-grade BYOVD intelligence and exploitation platform for analyzing signed vulnerable Windows drivers.",
+      "Worked on the Command and Control (C2) component, integrating Cipher C2 with BOF/COFF-based in-process payload dispatch and DriverArmory backend.",
+      "Developed a Ghidra headless analysis pipeline to automate driver binary analysis, IOCTL mapping, vulnerability pattern detection, and CVE cross-referencing.",
+      "Worked with a corpus of 400+ signed vulnerable drivers, extracting security-relevant metadata and generating vulnerability analysis reports."
     ],
     accent: true
   }
@@ -26,12 +31,12 @@ const activeRoles = [
 
 const standardRoles = [
   {
-    title: "Co-Founder & CEO / CFO",
-    company: "Seryth & Envirobuilders (Startups)",
-    tenure: "2024 – Present",
+    title: "Cybersecurity Intern",
+    company: "R S C Technologies",
+    tenure: "Jun 2024 – Jul 2024",
     details: [
-      "Building Seryth, an AI-powered personalized fragrance platform focused on consumer customization and sustainability.",
-      "Co-managing financial planning and operations for Envirobuilders, an eco-friendly construction materials startup."
+      "Administered authenticated vulnerability scans using Qualys Cloud Agents and assessed CVE/CVSS risks to guide remediation.",
+      "Monitored firewall rules, router logs, and network telemetry via Syslog/SNMP to identify misconfigurations."
     ]
   },
   {
@@ -44,12 +49,12 @@ const standardRoles = [
     ]
   },
   {
-    title: "Cybersecurity Intern",
-    company: "R S C Technologies",
-    tenure: "Jun 2024 – Jul 2024",
+    title: "Global Admissions Committee Member",
+    company: "Millennium Campus Network (MCN)",
+    tenure: "2026 – Present",
     details: [
-      "Administered authenticated vulnerability scans using Qualys Cloud Agents and assessed CVE/CVSS risks to guide remediation.",
-      "Monitored firewall rules, router logs, and network telemetry via Syslog/SNMP to identify misconfigurations."
+      "Reviewing applications for the international Millennium Fellowship program, calibrating scores for batches across Cameroon, Tanzania, Nigeria, and Botswana.",
+      "Working directly with global Team Leads to ensure rigorous assessment standards and selection integrity."
     ]
   }
 ];

@@ -117,15 +117,15 @@ const About = () => {
           <h2 className="text-6xl md:text-8xl font-display font-black text-black mb-8 leading-none">Hello!</h2>
           
           <p className="text-lg md:text-2xl font-medium leading-relaxed max-w-3xl text-white mb-8">
-            Hi, my name is <span className="text-black font-black uppercase tracking-wide">ANISH ANANDHAN</span>, a final-year Integrated M.Tech Software Engineering student at VIT Chennai with a deep focus on Cybersecurity, Pen-testing, Threat modeling, and Secure Software Development.
+            Hi, my name is <span className="text-black font-black uppercase tracking-wide">ANISH ANANDHAN A L</span>, an Integrated M.Tech Software Engineering student at VIT Chennai specializing in <span className="underline decoration-black underline-offset-4 font-bold">OT/ICS Security</span>, <span className="underline decoration-black underline-offset-4 font-bold">Cyber Defense</span>, and <span className="underline decoration-black underline-offset-4 font-bold">Cloud Security</span>.
           </p>
 
           <p className="text-base md:text-lg text-red-100/90 leading-relaxed max-w-3xl mb-8 font-medium">
-            I specialize in identifying vulnerabilities, designing secure network infrastructures, and building secure-by-design web applications. From deploying distributed honeypots and conducting penetration tests to developing AI-powered security analysis tools, I love solving complex security challenges and implementing robust defense mechanisms.
+            Currently working as an <strong className="text-white">OT/ICS Security Intern at Medtronic PLC</strong>, where I support OT vulnerability management (using Armis & Rapid7), cyber defense (Incident Response & CTI), and automated IOC-driven vulnerability assessment workflows.
           </p>
 
           <p className="text-base md:text-lg text-red-100/90 leading-relaxed max-w-3xl mb-12 font-medium">
-            Beyond security engineering, I actively participate in hackathons, lead student initiatives, collaborate with diverse teams, and continuously expand my technical expertise through hands-on projects and research.
+            Previously a <strong className="text-white">Research Intern at IIT Madras</strong> (Centre for Cybersecurity, Trust and Reliability), where I built DriverArmory (a BYOVD exploitation analysis platform), automated Ghidra headless binary pipelines for 400+ signed drivers, and integrated BOF/C2 frameworks.
           </p>
 
           {/* Tech Stack Icons */}
