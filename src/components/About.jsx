@@ -1,5 +1,7 @@
 import React from 'react';
 import stackImage from '../assets/about/image.png';
+import armisImg from '../assets/tools/armis.png';
+import ghidraImg from '../assets/tools/ghidra.png';
 
 const About = () => {
 
@@ -18,10 +20,7 @@ const About = () => {
     {
       name: 'Armis',
       icon: (
-        <svg viewBox="0 0 48 48" className="w-10 h-10 md:w-12 md:h-12">
-          <rect width="48" height="48" rx="12" fill="#4D2C91" />
-          <path d="M12 36 L25 10 H35 L26 26 H34 L27 36 H18 L22 28 H16 Z" fill="#FFFFFF" />
-        </svg>
+        <img src={armisImg} alt="Armis" className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-xl" />
       ),
     },
     {
@@ -36,17 +35,7 @@ const About = () => {
     {
       name: 'Ghidra',
       icon: (
-        <svg viewBox="0 0 48 48" className="w-10 h-10 md:w-12 md:h-12">
-          <rect width="48" height="48" rx="12" fill="#0F0F10" />
-          {/* Ghidra Red Dragon Infinity Loop Emblem */}
-          <path d="M17 17 C11 17 8 21 8 24 C8 27 11 31 17 31 C22 31 26 24 31 24 C36 24 40 27 40 30 C40 33 36 36 31 36 C27 36 24 33 21 28 L17 31 C21 37 26 40 31 40 C39 40 44 35 44 30 C44 23 38 20 31 20 C26 20 22 27 17 27 C14 27 12 25 12 24 C12 23 14 21 17 21 C20 21 23 23 26 27 L30 24 C26 19 21 17 17 17 Z" fill="#E52E2E" />
-          {/* Dragon Head on Top Right Loop */}
-          <path d="M30 18 C33 13 38 12 41 14 C42 16 39 19 36 20 C39 21 42 22 41 24 C38 23 34 22 30 18 Z" fill="#E52E2E" />
-          <circle cx="36" cy="16" r="1.2" fill="#FFD54F" />
-          {/* Binary bits */}
-          <text x="10" y="16" fill="#FFD54F" fontSize="4" fontWeight="bold" fontFamily="monospace">010</text>
-          <text x="7" y="37" fill="#FFD54F" fontSize="4" fontWeight="bold" fontFamily="monospace">101</text>
-        </svg>
+        <img src={ghidraImg} alt="Ghidra" className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-xl" />
       ),
     },
     {
